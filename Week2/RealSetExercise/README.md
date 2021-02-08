@@ -1,6 +1,9 @@
 # RealSetExercise
 
-![Exercise](./assets/exercise.png)
+### Exercise 1:
+![Exercise1](./assets/exercise1.png)
+### Exercise 2:
+![Exercise1](./assets/exercise2.png)
 
 ## How to run
 ### 1. Build Docker Image
