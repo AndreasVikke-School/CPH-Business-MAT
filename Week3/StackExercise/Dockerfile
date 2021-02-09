@@ -7,10 +7,10 @@ RUN dotnet restore
 
 # Copy everything else and build
 COPY . ./
-RUN dotnet publish RealSetExercise.csproj -c Release -o out
+RUN dotnet publish StackExercise.csproj -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "RealSetExercise.dll"]
+ENTRYPOINT ["dotnet", "StackExercise.dll"]
