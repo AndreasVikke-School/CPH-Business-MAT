@@ -40,8 +40,7 @@ namespace StackExercise.Queues
             return temp.value;
         }
 
-        public T peek()
-        {
+        public T peek() {
             if(this.front == null)
                 throw new OverflowException();
                 

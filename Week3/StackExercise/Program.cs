@@ -62,6 +62,26 @@ namespace StackExercise
             Console.WriteLine("Dequeues from queue: " + lqu.dequeue());
             Console.WriteLine("Dequeues from queue: " + lqu.dequeue());
             Console.WriteLine("Dequeues from queue: " + lqu.dequeue());
+
+            Console.WriteLine("========== ArrayQueue Test ==========");
+            ArrayQueue<int> aqu = new ArrayQueue<int>(10);
+
+            Console.WriteLine("Enqueues 1 to queue");
+            aqu.enqueue(1);
+            Console.WriteLine("Peek queue: " + aqu.peek());
+            Console.WriteLine("Enqueues 2 to queue");
+            aqu.enqueue(2);
+            Console.WriteLine("Peek queue: " + aqu.peek());
+            Console.WriteLine("Enqueues 6 to queue");
+            aqu.enqueue(6);
+            Console.WriteLine("Peek queue: " + aqu.peek());
+            Console.WriteLine("Enqueues 9 to queue");
+            aqu.enqueue(9);
+            Console.WriteLine("Peek queue: " + aqu.peek());
+            Console.WriteLine("Dequeues from queue: " + aqu.dequeue());
+            Console.WriteLine("Dequeues from queue: " + aqu.dequeue());
+            Console.WriteLine("Dequeues from queue: " + aqu.dequeue());
+            Console.WriteLine("Dequeues from queue: " + aqu.dequeue());
         }
     }
 }
