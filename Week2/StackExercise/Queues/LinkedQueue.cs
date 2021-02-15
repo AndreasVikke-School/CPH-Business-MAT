@@ -19,7 +19,7 @@ namespace StackExercise.Queues
         public void enqueue(T item) {
             Node newNode = new Node(item);
 
-            if(this.rear == null)
+            if(rear == null)
                 front = rear = newNode;
             else {
                 rear.next = newNode;
@@ -28,23 +28,25 @@ namespace StackExercise.Queues
         }
 
         public T dequeue() {
-            if(this.front == null)
-                throw new OverflowException();
+            isEmpty();
                 
-            Node temp = this.front;
-            this.front = this.front.next;
+            Node temp = front;
+            front = front.next;
 
-            if(this.front == null)
-                this.rear = null;
+            if(front == null)
+                rear = null;
             
             return temp.value;
         }
 
         public T peek() {
-            if(this.front == null)
-                throw new OverflowException();
-                
+            isEmpty();                
             return front.value;
+        }
+
+        private void isEmpty() {
+            if(front == null)
+                throw new OverflowException();
         }
     }
 }

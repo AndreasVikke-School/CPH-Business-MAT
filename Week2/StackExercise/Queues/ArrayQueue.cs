@@ -17,6 +17,7 @@ namespace StackExercise.Queues
         }
 
         public T dequeue() {
+            isEmpty();
             T temp = tarray[0];
 
             T[] newArray = new T[tarray.Length];
@@ -27,7 +28,13 @@ namespace StackExercise.Queues
         }
 
         public T peek() {
+            isEmpty();
             return tarray[0];
+        }
+
+        private void isEmpty() {
+            if(tarray[front] == null)
+                throw new OverflowException();
         }
     }
 }

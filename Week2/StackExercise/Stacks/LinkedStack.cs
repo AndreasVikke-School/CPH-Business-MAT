@@ -21,20 +21,20 @@ namespace StackExercise.Stacks
         }
 
         public T pop() {
-            if(top == null)
-                throw new OverflowException();
-                
+            isEmpty();
             T val = top.value;
             top = top.next;
             return val;
         }
 
         public T peek() {
-            if(top == null)
-                throw new OverflowException();
+            isEmpty();
             return top.value;
         }
 
-        
+        private void isEmpty() {
+            if(top == null)
+                throw new OverflowException();
+        }
     }
 }

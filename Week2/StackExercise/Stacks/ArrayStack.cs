@@ -17,18 +17,23 @@ namespace StackExercise.Stacks
         public void push(T item) {
             if (pointer < size)
                 tarray[pointer++] = item;
+            else
+                throw new OverflowException();
         }
 
         public T pop() {
-            if(pointer > 0) 
-                return tarray[--pointer];
-            throw new OverflowException();
+            isEmpty();
+            return tarray[--pointer];
         }
 
         public T peek() {
-            if(pointer > 0)
-                return tarray[pointer - 1];
-            throw new OverflowException();
+            isEmpty();
+            return tarray[pointer - 1];
+        }
+
+        private void isEmpty() {
+            if(pointer <= 0) 
+                throw new OverflowException();
         }
     }
 }
