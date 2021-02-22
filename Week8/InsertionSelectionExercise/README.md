@@ -1,4 +1,4 @@
-# RealSetExercise
+# Insertion And Selection Sort Exercise
 ## Table of Contents
 1. [Exercise](#Exercise)
 2. [Where to find solutions](#Where-to-find-solutions)
