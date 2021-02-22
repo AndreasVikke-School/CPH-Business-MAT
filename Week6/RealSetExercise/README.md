@@ -1,4 +1,4 @@
-# RealSetExercise
+# Real Set Exercise
 
 ### Exercise 1:
 ![Exercise1](./assets/exercise1.png)
