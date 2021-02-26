@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace InsertionSelectionExercise.Utils
+namespace ShakespeareAssignment.Utils
 {
     public class FileUtility
     {

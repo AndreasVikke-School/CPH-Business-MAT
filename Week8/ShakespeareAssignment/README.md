@@ -26,10 +26,10 @@
 ## How to run
 ### 1. Build Docker Image
 ```
-docker build -t insertionselectionexercise .
+docker build -t shakespeareassignment .
 ```
 
 ### 2. Run Docker Image
 ```
-docker run -it --rm insertionselectionexercise
+docker run -it --rm shakespeareassignment
 ```

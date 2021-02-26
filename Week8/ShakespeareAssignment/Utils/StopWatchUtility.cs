@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace InsertionSelectionExercise.Utils
+namespace ShakespeareAssignment.Utils
 {
     public class StopWatchUtility
     {
