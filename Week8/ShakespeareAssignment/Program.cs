@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ShakespeareAssignment.Sorters;
@@ -43,15 +44,24 @@ namespace ShakespeareAssignment
             ISort<string>.print(mergeOutput, printLines);
             #endregion
 
-            // #region Heap Sort
-            // Console.WriteLine("==== Heap Sort on Array ====");
-            // // string[] heapOutput = StopWatchUtility.time(() => HeapSort<string>.sort((string[])data.Clone()));
-            // // ISort<string>.print(heapOutput, printLines);
-            // int[] arr = { 12, 11, 13, 5, 6, 7 };
-            // int[] oo = HeapSort<int>.sort(arr);
-            // ISort<int>.print(oo, printLines);
-
+            // #region Quick Sort
+            // Console.WriteLine("==== Quick Sort on Array ====");
+            // string[] quickOutput = StopWatchUtility.time(() => QuickSort<string>.sort((string[])data.Clone()));
+            // ISort<string>.print(quickOutput, printLines);
             // #endregion
+
+            #region Heap Sort
+            Console.WriteLine("==== Heap Sort on Array ====");
+            string[] heapOutput = StopWatchUtility.time(() => HeapSort<string>.sort((string[])data.Clone()));
+            Array.Reverse(heapOutput);
+            ISort<string>.print(heapOutput, printLines);
+            #endregion
+
+            #region Trie Sort
+            Console.WriteLine("==== Trie Sort on Array ====");
+            string[] trieOutput = StopWatchUtility.time<string[]>(() => TrieSort.sort((string[])data.Clone()));
+            ISort<string>.print(trieOutput, printLines);
+            #endregion
         }
     }
 }
