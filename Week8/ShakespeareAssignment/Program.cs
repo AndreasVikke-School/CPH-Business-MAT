@@ -26,29 +26,23 @@ namespace ShakespeareAssignment
             Console.WriteLine("");
             #endregion
 
-            // #region Selection Sort
-            // Console.WriteLine("==== Selection Sort on Array ====");
-            // string[] selectionOutput = StopWatchUtility.time(() => SelectionSort<string>.sort((string[])data.Clone()));
-            // ISort<string>.print(selectionOutput, printLines);
-            // #endregion
+            #region Selection Sort
+            Console.WriteLine("==== Selection Sort on Array ====");
+            string[] selectionOutput = StopWatchUtility.time(() => SelectionSort<string>.sort((string[])data.Clone()));
+            ISort<string>.print(selectionOutput, printLines);
+            #endregion
 
-            // #region Insertion Sort
-            // Console.WriteLine("==== Insertion Sort on Array ====");
-            // string[] insertionOutput = StopWatchUtility.time(() => InsertionSort<string>.sort((string[])data.Clone()));
-            // ISort<string>.print(insertionOutput, printLines);
-            // #endregion
+            #region Insertion Sort
+            Console.WriteLine("==== Insertion Sort on Array ====");
+            string[] insertionOutput = StopWatchUtility.time(() => InsertionSort<string>.sort((string[])data.Clone()));
+            ISort<string>.print(insertionOutput, printLines);
+            #endregion
 
-            // #region Merge Sort
-            // Console.WriteLine("==== Merge Sort on Array ====");
-            // string[] mergeOutput = StopWatchUtility.time(() => MergeSort<string>.sort((string[])data.Clone()));
-            // ISort<string>.print(mergeOutput, printLines);
-            // #endregiona
-
-            // #region Quick Sort
-            // Console.WriteLine("==== Quick Sort on Array ====");
-            // string[] quickOutput = StopWatchUtility.time(() => QuickSort<string>.sort((string[])data.Clone()));
-            // ISort<string>.print(quickOutput, printLines);
-            // #endregion
+            #region Merge Sort
+            Console.WriteLine("==== Merge Sort on Array ====");
+            string[] mergeOutput = StopWatchUtility.time(() => MergeSort<string>.sort((string[])data.Clone()));
+            ISort<string>.print(mergeOutput, printLines);
+            #endregion
 
             #region Heap Sort
             Console.WriteLine("==== Heap Sort on Array ====");

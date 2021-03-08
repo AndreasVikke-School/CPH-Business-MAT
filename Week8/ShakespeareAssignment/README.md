@@ -7,20 +7,32 @@
 
 ## Exercise
 - Create a generic Sort interface
-- Implement Insertion sort and Selection Sort
+- Implement the following sorting algorithms:
+    - Insertion sort
+    - Selection Sort
+    - Merge Sort
+    - Heap Sort
+    - Trie Sort
 - Run the sorters with data from [Shakespeare Complete Works](./data/shakespeare-complete-works.txt)
 - Time the sorters using a StopWatch
 
 ## Where to find solutions
+### Sorters:
 - [Sort Interface](./Sorters/ISort.cs)
 - [Insertion Sort](./Sorters/InsertionSort.cs)
 - [Selection Sort](./Sorters/SelectionSort.cs)
+- [Merge Sort](./Sorters/MergeSort.cs)
+- [Heap Sort](./Sorters/HeapSort.cs)
+- [Trie Sort](./Sorters/TrieSort.cs)
+
+#### Utilities:
 - [Shakespeare Data Reader](./Utils/FileUtility.cs)
 - [StopWatch Utility](./Utils/StopWatchUtility.cs)
 
 ## Results of test
 - [Test File](./Program.cs)
 
+#### Command Line Output:
 ![Result](./assets/result.png)
 
 ## How to run
