@@ -1,4 +1,5 @@
 # Insertion And Selection Sort Exercise
+Andreas Vikke, Asger Sørensen, Martin Frederiksen, William Huusfeldt
 ## Table of Contents
 1. [Exercise](#Exercise)
 2. [Where to find solutions](#Where-to-find-solutions)
@@ -32,7 +33,19 @@
 ## Results of test
 - [Test File](./Program.cs)
 
-#### Command Line Output:
+#### Timings for whole file:
+- Insertion sort
+    - NaN (Too Long)
+- Selection Sort
+    - NaN (Too Long)
+- Merge Sort
+    - NaN (Too Long)
+- Heap Sort
+    - 4.3318126 sec
+- Trie Sort
+    - 0.6293269 sec
+
+#### Command Line Output for 2000 lines:
 ![Result](./assets/result.png)
 
 ## How to run
