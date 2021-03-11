@@ -1,0 +1,36 @@
+.hanoi {
+    display: flex;
+}
+
+.tower {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: red;
+    height: 7rem;
+    width: .5rem;
+    border-radius: .5rem;
+    margin: 0 4rem;
+}
+
+.disk {
+    height: 1rem;
+    border-collapse: separate;
+    border: 2px solid;
+    border-color: rgb(24, 26, 27);
+    border-radius: .5rem;
+}
+.disk-1 {
+    width: 4.5rem;
+    background-color: aqua;
+}
+.disk-2 {
+    width: 4rem;
+    background-color: greenyellow;
+}
+.disk-3 {
+    width: 3.5rem;
+    background-color: darkgoldenrod;
+}
