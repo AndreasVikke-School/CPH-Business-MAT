@@ -10,7 +10,7 @@
 
 ## Where to find solutions
 - [Game](./Game.cs)
-- [Main Program](./Program)
+- [Main Program](./Program.cs)
 
 ## Result of program
 - Running 5 disks, with movemnt each 100 milisecond
