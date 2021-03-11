@@ -13,8 +13,8 @@
 - [Main Program](./Program)
 
 ## Result of program
-Running 5 disks, with movemnt each 100 milisecond
-![Result](./assets/result.gif)
+- Running 5 disks, with movemnt each 100 milisecond
+- ![Result](./assets/result.gif)
 
 ## How to run
 ### 1. Build Docker Image
