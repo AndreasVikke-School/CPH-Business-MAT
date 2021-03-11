@@ -2,7 +2,7 @@
 ## Table of Contents
 1. [Assignment](#Assignment)
 2. [Where to find solutions](#Where-to-find-solutions)
-3. [Results of test](#Results-of-test)
+3. [Result of program](#Results-of-test)
 4. [How to run](#How-to-run)
 
 ## Assignment
@@ -13,6 +13,7 @@
 - [Main Program](./Program)
 
 ## Result of program
+Running 5 disks, with movemnt each 100 milisecond
 ![Result](./assets/result.gif)
 
 ## How to run
