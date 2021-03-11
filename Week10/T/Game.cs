@@ -7,9 +7,9 @@ namespace TowersofHanoi
     {
         public List<Tuple<int, int>> moves;
 
-        public Game(int disks) {
+        public Game() {
             moves = new List<Tuple<int, int>>();
-            MoveDisk(disks, 0, 1, 2);
+            MoveDisk(3, 0, 1, 2);
         }
 
         private void MoveDisk(int disk_num, int src, int aux, int dest) {
